@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Ramzour</title>
+    <link rel="icon" type="image/x-icon" href="./ramzor.png">
+    <link rel="stylesheet" href="style.css">
+    <meta name="keywords" content="Ramzor, On, Off">
+    <meta name="description" content="This is a Ramzor Demo using JS">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+
+<h1>My Ramzour</h1>
+<p>The Ramzour Presents JS Concept</p>
+
+<script>
+function light(sw) {
+  var pic;
+  if (sw == 0) {
+    pic = "red.PNG"
+  } else if  (sw == 1){
+    pic = "green.PNG"
+  }
+  else{
+    pic = "yellow.PNG"
+  }
+  document.getElementById('myImage').src = pic;
+}
+</script>
+
+<center><img id="myImage" src="red.PNG" width="100" height="180"></center>
+
+<p>
+<center>
+    <button type="button" onclick="light(1)">Ramzor On</button>
+    <button type="button" onclick="light(0)">Ramzor Off</button>
+    <button type="button" onclick="light(2)">Ramzor StandBy</button>
+
+</center>    
+
+
+</p>
+
+</body>
+</html>
+
